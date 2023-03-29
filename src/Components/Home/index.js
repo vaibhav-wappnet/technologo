@@ -6,8 +6,7 @@ import Header from './Header'
 const index = () => {
     return (
         <div>
-            <Header />
-            <Navbar />
+            
             <Carousel />
         </div>
     )

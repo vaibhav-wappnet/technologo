@@ -6,28 +6,33 @@ const NavbarData = [
     },
     {
         id: 2,
-        title: 'About',
+        title: 'About Us',
         path: '/about',
     },
     {
         id: 3,
-        title: 'become chef',
-        path: '/chef',
+        title: 'services',
+        path: '/services',
     },
     {
         id: 4,
-        title: 'become driver',
-        path: '/driver',
+        title: 'shop',
+        path: '/shop',
     },
     {
         id: 5,
-        title: 'Login',
-        path: '/login',
+        title: 'blog',
+        path: '/blog',
     },
     {
         id: 6,
-        title: 'Sign up',
+        title: 'pages',
         path: '/signup',
+    },
+    {
+        id: 7,
+        title: 'contact us',
+        path: '/contact',
     }
 ]
 export default NavbarData;

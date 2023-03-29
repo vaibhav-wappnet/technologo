@@ -1,7 +1,11 @@
 import React from 'react'
-import Button from "../../Utils/Button"
+import CarouselButton from "../../Utils/CarouselButton"
+import Header from "./Header";
+import Navbar from "./Navbar";
 
-import banner_img from "../../Assets/banner_img.png"
+import banner_1 from "../../Assets/banner_img-1.png"
+import banner_2 from "../../Assets/banner_img-2.png"
+import banner_3 from "../../Assets/banner_img-3.png"
 
 import "../../Styles/styleConstants.css"
 
@@ -9,37 +13,36 @@ import *  as HiIcons from "react-icons/hi"
 
 const Carousel = () => {
     return (
-        <div className="container-fluid z-index-3">
-            <div id="carousel" className="carousel slide" data-bs-ride="carousel">
+        <div className="mask jumbotron">
+            <div className="title d-flex w-100 flex-column justify-content-end">
+                <Header />
+                <hr />
+                <Navbar />
+                <CarouselButton
+                    className="carousel-btn btn-sm-primary"
+                    target="#carouselExampleDark"
+                    slide="prev"
+                    data-bs-slide="next"
+                    text={<HiIcons.HiChevronLeft />}
+                />
+                <CarouselButton
+                    className={"carousel-btn"}
+                    target="#carouselExampleDark"
+                    slide="next"
+                    data-bs-slide="next"
+                    text={<HiIcons.HiChevronRight />}
+                />
+            </div>
+            <div id="carouselExampleDark" className="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <img className="" src={banner_img} alt="lol" />
+                    <div className="carousel-item active" data-bs-interval="3000">
+                        <img src={banner_1} className="w-100" alt="..." />
                     </div>
-                    <div className="carousel-item">
-                        <img className="" src={banner_img} alt="lol" />
+                    <div className="carousel-item" data-bs-interval="3000">
+                        <img src={banner_2} className="w-100" alt="..." />
                     </div>
-                    <div className="carousel-item">
-                        <img className="" src={banner_img} alt="lol" />
-                    </div>
-                </div>
-                <div className="carousel-text d-flex flex-row justify-content-between">
-                    <div className="description d-flex flex-column">
-                        <h3>Preparing for your</h3>
-                        <h1>Success IT Solutions</h1>
-                        <p>We have 25 years of experience in IT business. Professional IT solutions for your business must explain to you how all this mistaken idea of denouncing pleasure and praising pain</p>
-                    </div>
-                    <div className="carousel-buttons d-flex">
-                        <Button
-                            className="carousel-btn"
-                            data-bs-target="#carouselExampleCaptions"
-                            data-bs-slide="prev"
-                            text={<HiIcons.HiChevronLeft />}
-                        />
-                        <Button
-                            className="carousel-btn"
-                            data-bs-target="#carouselExampleCaptions"
-                            data-bs-slide="prev" text={<HiIcons.HiChevronRight />}
-                        />
+                    <div className="carousel-item" data-bs-interval="3000">
+                        <img src={banner_3} className="w-100" alt="..." />
                     </div>
                 </div>
             </div>
