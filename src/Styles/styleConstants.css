@@ -1,11 +1,11 @@
-.carousel-btn { 
-    margin: 0 4px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.carousel-btn {
+	margin: 0 4px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	height: 40px;
 	width: 40px;
-	background-color: #d20145;
+	background-color: var(--pink);
 	border: none;
 	outline: none;
 	font-size: 35px;
@@ -13,9 +13,120 @@
 }
 
 .social-buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 35px;
+	width: 35px;
 	outline: none;
 	border: none;
 	font-size: 20px;
 	border-radius: 5px;
-	margin: 0 4px;
+	margin: 0 6px;
+	transition: all 0.4s;
+	background-color: #fff;
+	opacity: 75%;
+}
+.social-buttons:hover {
+	opacity: 1;
+}
+
+.header-main {
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+.header-sub {
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+	word-break: break;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-links {
+	display: flex;
+}
+
+.logo {
+	height: 2.25rem;
+}
+
+.nav-link {
+	color: #fff !important;
+}
+
+.jumbotron {
+	position: relative;
+}
+
+.jumbotron .title,
+.text {
+	position: absolute;
+	/* top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); */
+	z-index: 3;
+}
+
+.carousel-item img {
+	filter: brightness(50%);
+}
+
+hr {
+	font-weight: 900;
+	opacity: 0.75 !important;
+	color: #fff !important;
+}
+
+@media screen and (max-width: 992px) {
+	.logo {
+		height: 1.5rem;
+	}
+	.header-main {
+		font-size: 0.7rem;
+	}
+	.header-sub {
+		font-size: 0.75rem;
+	}
+}
+@media screen and (max-width: 768px) {
+	.header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.header-links {
+		display: none !important;
+		/* flex-direction: column;
+		justify-content: flex-end;
+		align-items: start; */
+	}
+
+	.link {
+		display: flex;
+		flex-direction: row;
+		justify-content: start !important;
+	}
+
+	.toggle-button {
+		position: relative;
+		top: -65px;
+		left: 40px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.link {
+		margin: 5px 0;
+	}
+	.nav-link{
+		color: black !important;
+	}
 }
