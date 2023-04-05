@@ -1,3 +1,71 @@
+/*---------------------- 404 Page Not Found --------------------*/
+.error-img {
+	height: 90vh !important;
+}
+
+/*---------------------- Header and Navbar --------------------*/
+
+.header-main {
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+.header-sub {
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+	word-break: break;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-links {
+	display: flex;
+}
+
+.logo {
+	height: 2rem;
+}
+
+.nav-link {
+	color: #fff !important;
+}
+
+/*---------------------- jumbotron and carousel --------------------*/
+
+.jumbotron {
+	position: relative;
+}
+
+.jumbotron .title,
+.text {
+	position: absolute;
+	/* top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); */
+	z-index: 3;
+}
+
+.carousel-content {
+	/* margin-top: 25%; */
+	top: 30%;
+	position: absolute;
+	z-index: 2;
+}
+
+.carousel-item img {
+	filter: brightness(50%);
+}
+
+/*---------------------- Buttons --------------------*/
+
 .carousel-btn {
 	margin: 0 4px;
 	display: flex;
@@ -16,8 +84,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 35px;
-	width: 35px;
+	height: 30px;
+	width: 30px;
 	outline: none;
 	border: none;
 	font-size: 20px;
@@ -31,52 +99,29 @@
 	opacity: 1;
 }
 
-.header-main {
-	font-size: 14px;
-	margin: 0;
-	padding: 0;
-}
-.header-sub {
-	font-size: 14px;
+.common-btn {
+	border: none;
+	padding: 7px 10px;
 	font-weight: 600;
-	margin: 0;
-	padding: 0;
-	word-break: break;
+	border-radius: 4px;
 }
 
-.header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+.pink-bg {
+	background-color: var(--pink);
+	color: #fff;
 }
-.header-links {
-	display: flex;
+.purple-bg {
+	background-color: var(--purple);
+	color: #fff;
 }
-
-.logo {
-	height: 2.25rem;
-}
-
-.nav-link {
-	color: #fff !important;
+.black-bg {
+	background-color: #000;
+	color: #fff;
 }
 
-.jumbotron {
-	position: relative;
-}
-
-.jumbotron .title,
-.text {
-	position: absolute;
-	/* top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%); */
-	z-index: 3;
-}
-
-.carousel-item img {
-	filter: brightness(50%);
+.btn-arrow {
+	font-size: 20px;
+	margin: 0 0 0 8px;
 }
 
 hr {
@@ -85,48 +130,269 @@ hr {
 	color: #fff !important;
 }
 
+/*---------------------- Consultancy Services --------------------*/
+
+.services {
+	position: relative;
+	top: -70px;
+	z-index: 2;
+}
+
+.service-card {
+	height: 215px;
+	width: 250px;
+	padding: 10px;
+	margin: 10px;
+}
+.service-card h3 {
+	font-size: 1.35rem;
+}
+.service-card p {
+	margin: 10px;
+	font-size: 0.8rem;
+}
+
+/*---------------------- About Us --------------------*/
+.about-title hr {
+	width: 60px;
+	color: var(--pink) !important;
+}
+
+.about-title p {
+	margin: 0 20px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.about-container {
+	margin: 40px;
+	display: flex;
+	justify-content: space-evenly;
+	height: 70vh;
+}
+
+.about-content h1 {
+	font-size: 2rem;
+	font-weight: 900;
+}
+
+.about-content span {
+	color: var(--pink);
+}
+
+.img-block {
+	position: absolute;
+}
+
+.emp-img {
+	position: relative;
+	top: 80px;
+	right: 150px;
+}
+
 @media screen and (max-width: 992px) {
 	.logo {
 		height: 1.5rem;
 	}
+
 	.header-main {
 		font-size: 0.7rem;
 	}
+
 	.header-sub {
 		font-size: 0.75rem;
 	}
+
+	.nav-link {
+		color: black !important;
+	}
+	/* .services {
+		position: relative;
+		top: 0;
+	} */
+	.carousel-content {
+		top: 20%;
+		position: absolute;
+		z-index: 2;
+	}
+
+	.about-container {
+		display: flex;
+		justify-content: space-between;
+	}
 }
+
 @media screen and (max-width: 768px) {
 	.header {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 	}
+
 	.header-links {
 		display: none !important;
-		/* flex-direction: column;
-		justify-content: flex-end;
-		align-items: start; */
 	}
 
 	.link {
 		display: flex;
 		flex-direction: row;
-		justify-content: start !important;
+		justify-content: flex-start;
+	}
+
+	.nav-link {
+		color: black !important;
 	}
 
 	.toggle-button {
 		position: relative;
 		top: -65px;
 		left: 40px;
+		/* padding: 2px !important; */
+	}
+	.toggle-button span {
+		font-size: 1rem;
+		width: 20px !important;
+	}
+
+	.main-text h3 {
+		font-size: 1rem;
+	}
+	.main-text h1 {
+		font-size: 1.75rem;
+	}
+	.main-text p {
+		font-size: 0.75rem;
+	}
+
+	.common-btn {
+		font-size: 0.75rem;
+	}
+	.btn-arrow {
+		font-size: 15px;
+	}
+
+	.carousel-btn {
+		height: 30px;
+		width: 30px;
+	}
+
+	.carousel-content {
+		top: 20%;
+		position: absolute;
+		z-index: 2;
+	}
+
+	.services {
+		position: relative;
+		top: 0;
+	}
+
+	.service-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.img-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.img-block img {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		height: 150px;
+	}
+
+	.emp-img {
+		position: relative;
+		top: -80px;
+		right: -65px;
+	}
+
+	.about-title p {
+		font-size: 0.5rem;
+		margin: 0 20px;
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+
+	.about-content h1 {
+		font-size: 1rem;
+		font-weight: 900;
+	}
+	.about-content p {
+		font-size: 0.75rem;
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 538px) {
+	.carousel-content {
+		top: 10%;
+		position: absolute;
+		z-index: 2;
+	}
+
+	.about-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.img-container {
+		width: 100% !important;
+	}
+
+	.img-block {
+		position: relative;
+		display: flex !important;
+	}
+
+	.emp-img {
+		height: 100px !important;
+		position: relative;
+		top: 50px;
+		right: 75px;
+	}
+
+	.text-container {
+		width: 100% !important;
+	}
+}
+
+@media screen and (max-width: 420px) {
 	.link {
 		margin: 5px 0;
 	}
-	.nav-link{
+	.nav-link {
 		color: black !important;
+	}
+
+	.main-text h3 {
+		font-size: 0.75rem;
+	}
+	.main-text h1 {
+		font-size: 1rem;
+	}
+	.main-text p {
+		font-size: 0.5rem;
+	}
+
+	.common-btn {
+		font-size: 0.5rem;
+	}
+	.btn-arrow {
+		font-size: 10px;
+	}
+
+	.carousel-btn {
+		height: 20px;
+		width: 20px;
+	}
+
+	.carousel-content {
+		top: 7.5%;
+		position: absolute;
+		z-index: 2;
 	}
 }
