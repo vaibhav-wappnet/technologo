@@ -1,9 +1,9 @@
 import React from 'react'
-import { ServicesData } from '../../APIs/ServicesData'
+import { ConsultancyData } from '../../APIs/ConsultancyData'
 const ConsultancyServices = () => {
     return (
         <div className="services d-flex flex-wrap flex-row justify-content-center align-items-center">
-            {ServicesData.map((data) => {
+            {ConsultancyData.map((data) => {
                 return (
 
                     <div key={data.id} className={data.className}>

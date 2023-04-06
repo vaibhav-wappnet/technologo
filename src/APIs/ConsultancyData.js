@@ -2,8 +2,7 @@ import notes from "../Assets/notes.png"
 import message from "../Assets/message.png"
 import todo from "../Assets/todo.png"
 
-
-export const ServicesData = [
+export const ConsultancyData = [
     {
         id: 1,
         image: notes,
