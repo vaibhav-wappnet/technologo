@@ -105,10 +105,30 @@
 	font-weight: 600;
 	border-radius: 4px;
 }
-
+.service-btn {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	min-width: 140px;
+	padding: 0.75rem;
+	margin: 0.5rem;
+	font-weight: 500;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+.selected {
+	background-color: var(--pink);
+	color: white;
+}
 .pink-bg {
 	background-color: var(--pink);
 	color: #fff;
+}
+.white-bg {
+	background-color: #fff;
+	color: black;
 }
 .purple-bg {
 	background-color: var(--purple);
@@ -124,7 +144,7 @@
 	margin: 0 0 0 8px;
 }
 
-hr {
+.title hr {
 	font-weight: 900;
 	opacity: 0.75 !important;
 	color: #fff !important;
@@ -154,6 +174,7 @@ hr {
 
 /*---------------------- About Us --------------------*/
 .about-title hr {
+	opacity: 1;
 	width: 60px;
 	color: var(--pink) !important;
 }
@@ -165,10 +186,9 @@ hr {
 }
 
 .about-container {
-	margin: 40px;
 	display: flex;
 	justify-content: space-evenly;
-	height: 70vh;
+	/* height: 100vh; */
 }
 
 .about-content h1 {
@@ -189,6 +209,41 @@ hr {
 	top: 80px;
 	right: 150px;
 }
+
+/*---------------------- Services Section --------------------*/
+
+.heading hr {
+	opacity: 1;
+	width: 40px;
+	margin: 0;
+	font-weight: 900;
+	color: #fff;
+}
+
+.heading p {
+	margin: 0 10px;
+}
+
+.jumbotron .service-header {
+	color: #fff;
+	position: absolute;
+	top: 10%;
+	z-index: 3;
+}
+
+.service-emp {
+	position: absolute;
+	filter: brightness(100%) !important;
+}
+
+.video-img {
+	position: relative;
+	top: 230px;
+	left: 330px;
+	border-radius: 5px;
+}
+
+/* -------------------- Media Queries ----------------------- */
 
 @media screen and (max-width: 992px) {
 	.logo {
@@ -295,7 +350,7 @@ hr {
 	.img-container {
 		display: flex;
 		justify-content: center;
-		align-items: center;
+		/* align-items: center; */
 	}
 
 	.img-block img {
@@ -337,6 +392,7 @@ hr {
 	.about-container {
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
 	}
 
 	.img-container {
