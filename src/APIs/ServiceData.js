@@ -13,7 +13,7 @@ export const ServiceData = [
                 image: banner_1,
                 videoImage: video_bg,
                 para_1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra eros vitae lorem fermentum, a luctus eros dapibus. Nunc id euismod ante. Nulla vel iaculis orci. Fusce dignissim nisl vel nulla imperdiet, vel fringilla massa facilisis. Vestibulum id neque consequat quam blandit commodo et ut tellus.",
-                para_2: "Morbi aliquet cursus sapien, sit amet consectetur lacus aliquet sed. Morbi mi urna, venenatis quis ultricies vel, blandit ac quam. Nam lacinia turpis at fermentum aliquet. Nulla nisi lectus, ultrices quis vulputate id, rhoncus vitae nisl. Mauris pulvinar posuere nulla molestie porttitor. Etiam at gravida felis."
+                para_2: "Morbi aliquet cursus sapien, sit amet consectetur lacus aliquet sed. Morbi mi urna, venenatis quis ultricies vel, blandit ac quam. Nam lacinia turpis at fermentum aliquet. Nulla nisi lectus, ultrices quis vulputate id."
             }
         ]
     },
@@ -39,7 +39,7 @@ export const ServiceData = [
                 image: banner_3,
                 videoImage: video_bg,
                 para_1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra eros vitae lorem fermentum, a luctus eros dapibus. Nunc id euismod ante. Nulla vel iaculis orci. Fusce dignissim nisl vel nulla imperdiet, vel fringilla massa facilisis. Vestibulum id neque consequat quam blandit commodo et ut tellus.",
-                para_2: "Morbi aliquet cursus sapien, sit amet consectetur lacus aliquet sed. Morbi mi urna, venenatis quis ultricies vel, blandit ac quam. Nam lacinia turpis at fermentum aliquet. Nulla nisi lectus, ultrices quis vulputate id, rhoncus vitae nisl. Mauris pulvinar posuere nulla molestie porttitor. Etiam at gravida felis."
+                para_2: "Morbi aliquet cursus sapien, sit amet consectetur lacus aliquet sed. Morbi mi urna, venenatis quis ultricies vel, blandit ac quam. Nam lacinia turpis at fermentum aliquet. Nulla nisi lectus, ultrices quis vulputate id."
             },
         ]
     },
@@ -52,7 +52,7 @@ export const ServiceData = [
                 image: banner_1,
                 videoImage: video_bg,
                 para_1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra eros vitae lorem fermentum, a luctus eros dapibus. Nunc id euismod ante. Nulla vel iaculis orci. Fusce dignissim nisl vel nulla imperdiet, vel fringilla massa facilisis. Vestibulum id neque consequat quam blandit commodo et ut tellus.",
-                para_2: "Morbi aliquet cursus sapien, sit amet consectetur lacus aliquet sed. Morbi mi urna, venenatis quis ultricies vel, blandit ac quam. Nam lacinia turpis at fermentum aliquet. Nulla nisi lectus, ultrices quis vulputate id, rhoncus vitae nisl. Mauris pulvinar posuere nulla molestie porttitor. Etiam at gravida felis."
+                para_2: "Morbi aliquet cursus sapien, sit amet consectetur lacus aliquet sed. Morbi mi urna, venenatis quis ultricies vel, blandit ac quam. Nam lacinia turpis at fermentum aliquet. Nulla nisi lectus, ultrices quis vulputate id."
             },
         ]
     },

@@ -35,15 +35,15 @@ const ServiceMenu = () => {
                 })}
             </div>
 
-            <div className="service-content my-5 d-flex flex-row">
+            <div className="service-content my-4=5 d-flex flex-row">
                 {details.content.map((item) => {
                     return (
-                        <div key={item.id} className="container d-flex flex-row justify-content-between">
+                        <div key={item.id} className="content-box my-2 container-lg d-flex justify-content-between">
                             <div className="image-container flex-column col-4">
                                 <img src={item.image} className="service-emp" height="280px" width="400px" alt=":(" />
                                 <img src={item.videoImage} className="video-img" height="150px" alt="" />
                             </div>
-                            <div className="text-container flex-column col-6 text-start">
+                            <div className="service-text-container flex-column col-6 text-start">
                                 <p>
                                     {item.para_1}
                                 </p>

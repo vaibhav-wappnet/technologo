@@ -4,7 +4,7 @@ import ServiceMenu from './ServiceMenu'
 
 const Jumbotron = () => {
   return (
-    <div className="mask jumbotron bg-secondary my-5 d-flex flex-column justify-content-center">
+    <div className="mask jumbotron d-flex flex-column justify-content-center">
       <div className="service-header w-100 d-flex flex-column justify-content-center">
         <div className="heading d-flex justify-content-center flex-column align-items-center text-uppercase">
           <div className="d-flex align-items-center ">
@@ -20,7 +20,7 @@ const Jumbotron = () => {
           <ServiceMenu />
         </div>
       </div>
-      <div className="">
+      <div className="bg-image-service">
         <img src={banner_4} className="w-100 img-fluid" alt=":(" />
       </div>
     </div>
