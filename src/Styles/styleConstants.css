@@ -290,13 +290,11 @@ p {
 	background: linear-gradient(var(--pink), var(--purple));
 }
 
-
-
 /* -------------------- Project Section ----------------------- */
 
 .complete-text {
 	color: var(--pink);
-	font-family: 'Dancing Script', cursive;
+	font-family: "Dancing Script", cursive;
 }
 
 .progress-box {
@@ -306,6 +304,51 @@ p {
 	width: 400px;
 	background-color: #091b29;
 	color: #fff;
+}
+
+/* -------------------- Slider Data ----------------------- */
+
+.slider-bg {
+	background-image: url("../Assets/slider-bg.jpg");
+	min-height: 500px !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Image slider Carousel dots */
+.alice-carousel__dots {
+	margin: 0 0 10px 0 !important;
+	padding: 0 !important;
+}
+.alice-carousel__dots-item.__active {
+	background: #fff !important;
+}
+
+.alice-carousel__dots-item {
+	background: #111 !important;
+}
+
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+	display: none !important;
+}
+.card-body h5 {
+	font-size: 1.25rem !important;
+}
+
+.card-body p {
+	font-size: 0.75rem !important;
+}
+
+/* -------------------- Contact Us Section ----------------------- */
+.contact-bg {
+	position: absolute;
+	filter: brightness(65%);
+}
+
+.info {
+	position: relative;
 }
 
 /* -------------------- Media Queries ----------------------- */
@@ -658,7 +701,7 @@ p {
 		font-size: 0.6rem;
 	}
 
-	.progress-box{
+	.progress-box {
 		width: auto;
 	}
 }
