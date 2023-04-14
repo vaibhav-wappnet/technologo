@@ -5,6 +5,8 @@ import ServicePage from "../Components/Services/index"
 import ProjectInfo from "../Components/Project-Info/index"
 import ImageSlider from "../Components/Image-Slider/index"
 import Contact from "../Components/Contact/index"
+import BrandLogo from "../Components/Brand-Logo/index"
+import Footer from "../Components/Footer/Footer"
 // import PageNotFound from "../Pages/PageNotFound"
 
 const LandingPage = () => {
@@ -16,6 +18,8 @@ const LandingPage = () => {
             <ProjectInfo />
             <ImageSlider />
             <Contact />
+            <BrandLogo/>
+            <Footer />
         </>
     )
 }
