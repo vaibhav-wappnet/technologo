@@ -7,7 +7,7 @@ import emp from "../../Assets/lady_emp.png"
 
 const index = () => {
 	return (
-		<div className="about">
+		<div data-aos="fade-down" className="about">
 			<div className="about-container d-flex">
 				<div className="img-container d-flex col-4">
 					<div className="img-block">

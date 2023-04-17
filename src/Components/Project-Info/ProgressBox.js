@@ -4,7 +4,7 @@ import { ProgressData } from '../../APIs/ProgressData';
 const ProgressBox = () => {
     return (
         <>
-            <div className="progress-box p-3 d-flex flex-column justify-content-center  ">
+            <div data-aos="fade-right" className="progress-box p-3 d-flex flex-column justify-content-center  ">
                 {ProgressData.map((data) => {
                     return (
                         <div key={data.id} className="progress-text p-2 d-flex flex-column">

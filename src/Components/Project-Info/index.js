@@ -5,7 +5,7 @@ import ProjectProcess from './ProjectProgress'
 const index = () => {
     return (
         <>
-            <div className="project-title container d-flex flex-column my-5">
+            <div data-aos="fade-down" className="project-title container d-flex flex-column my-5">
                 <div className="title-text d-flex align-items-center justify-content-center">
                     <hr />
                     <p>Working Process</p>
