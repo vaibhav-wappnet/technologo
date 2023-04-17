@@ -3,7 +3,7 @@ import message from "../../Assets/message.png"
 
 const SelectProject = (props) => {
     return (
-        <div className="project-box d-flex my-3 px-3 flex-column justify-content-center align-items-center">
+        <div data-aos="flip-left" className="project-box d-flex my-3 px-3 flex-column justify-content-center align-items-center">
             <div className="image-box my-4">
                 <img src={message} height="50px" alt="" />
             </div>

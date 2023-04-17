@@ -16,7 +16,7 @@ const ServiceMenu = () => {
 
 
     return (
-        <div className="service-menu">
+        <div data-aos="zoom-in" className="service-menu">
             <div className="service-menu d-flex flex-row justify-content-center">
                 {ServiceBtnData.map((data) => {
                     return (
@@ -38,7 +38,7 @@ const ServiceMenu = () => {
             <div className="service-content my-4=5 d-flex flex-row">
                 {details.content.map((item) => {
                     return (
-                        <div key={item.id} className="content-box my-2 container-lg d-flex justify-content-between">
+                        <div data-aos="zoom-out" key={item.id} className="content-box my-2 container-lg d-flex justify-content-between">
                             <div className="image-container flex-column col-4">
                                 <img src={item.image} className="service-emp" height="280px" width="400px" alt=":(" />
                                 <img src={item.videoImage} className="video-img" height="150px" alt="" />

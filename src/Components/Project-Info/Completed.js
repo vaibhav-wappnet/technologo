@@ -3,7 +3,7 @@ import React from 'react'
 const Completed = () => {
     return (
 
-        <div className="text-start d-flex flex-column justify-content-center">
+        <div data-aos="fade-left" className="text-start d-flex flex-column justify-content-center">
             <div className="d-flex flex-row justify-content-center">
                 <div className="m-2">
                     <div className="p-3">

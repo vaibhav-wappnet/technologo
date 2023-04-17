@@ -9,10 +9,10 @@ const index = () => {
         <>
             <div className="slider-bg container-fluid d-flex justify-content-center align-items-center img-fluid  my-5 gx-0">
                 {/* {console.log(data.boxes[index].source)} */}
-                <AliceCarousel autoPlay autoPlayInterval={3000}>
+                <AliceCarousel autoPlay infinite autoPlayInterval={3000}>
                     {SliderData.map((data) => {
                         return (
-                            <div key={data.id} className="card-container container my-4 flex-wrap flex-md-nowrap d-flex flex-column flex-md-row justify-content-center align-items-center">
+                            <div data-aos="zoom-in" key={data.id} className="card-container container my-4 flex-wrap flex-md-nowrap d-flex flex-column flex-md-row justify-content-center align-items-center">
                                 <SliderCard />
                             </div>
                         )
